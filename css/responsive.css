@@ -1,48 +1,42 @@
 
-@media screen and (max-width:1000px) {
-  .work_image {
-    width: 150px;
-    height: 200px;
-    float: left;
-    margin: 10px;
-    /* overflow: hidden; */
-  }
 
-  .main_image {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-  }
-
-  .work {
-    display: table-row;
-  }
-
-  .works {
-    display: table;
-    width:50%;
-  }
-}
-
-@media screen and (max-width:600px) {
+/* nexus 5 */
+@media screen and (max-width:500px) {
   main, header {
     font-size: 25px;
   }
-
-  .work_image {
-      width: 100px;
-      height: 150px;
+  .nav-left img{
+    padding: 20px 0px 10px 10px;
   }
-  .main_image {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dv_colors {
+    order: 2;
+  }
+  .dv_images {
+    order: 1;
+  }
+  .cbox {
+    width: 100%;
   }
 }
 
-@media screen and (min-width:1001px) {
-  main, .container, .box {
-    width: 1000px;
+/* ipad */
+@media screen and (max-width:800px) {
+  main, header{
+    font-size: 20px;
+  }
+  .nav-left img{
+    padding: 20px 0px 20px 40px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width:1024px) {
+  main, .container{
+    width: 950px;
     margin-left: auto;
     margin-right: auto;
   }
